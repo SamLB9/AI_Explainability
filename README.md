@@ -1,5 +1,4 @@
 # AI_Explainability
-### How can Machine Learning models be explained?
 
 Artificial Intelligence (AI) makes it possible to harness huge volumes of data to perform complex tasks, usually very efficiently. However, AI models, and more specifically Machine Learning and even Deep Learning models, are often compared to "black boxes" due to their opaque operation, not necessarily understandable by humans. The complexity of these models is therefore a strength, as it enables us to respond to problems better than with simpler models, but it is also a weakness, as it makes them difficult to interpret. However, in certain critical fields such as medical diagnostics or autonomous driving, where human lives may be at stake, control and understanding of the decision-making mechanisms of these models is essential.
 
@@ -14,7 +13,7 @@ This need for explicability concerns different players, each with their own moti
 
 In certain fields, such as health or law, the use of machine learning models that cannot be explained raises ethical questions and can prove dangerous. This aspect should be much more closely regulated. It could be interesting to create a text similar to the RGPD, but for explicability, which is an issue at least as sensitive as user data protection.
 
-## How do you explain a machine learning model and how it works?
+## How to explain a machine learning model and how it works?
 
 ### 1) LIME (Local Interpretable Model-agnostic Explanations):
 

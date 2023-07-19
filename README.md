@@ -46,7 +46,7 @@ Example of a counterfactual explanation:
 
 Still on the subject of the chosen customer, a first counterfactual explanation consists in the modification of his type of contract and his type of payment; with these two changes, the model predicts non-cancellation. The same applies if only the customer's seniority is modified, from 13 to 65 months.
 
-### In conclusion, these three methods produce different explanations, but they seem to be consistent with each other, since certain variables are found in all the explanations. This is the case for contract type, which appears to be an important factor in prediction. This seems relevant, since it is generally easier to cancel a monthly contract, often without commitment.
+### In conclusion, these three methods produce different explanations, but they seem to be consistent with each other, since certain variables are found in all the explanations. This is the case for contract type, which appears to be an important factor in prediction. This seems relevant, since it is generally easier to cancel a monthly contract, often without commitment. Finally, explicability methods vary in terms of the techniques used, visualization and type of explanation. One of the difficulties therefore lies in evaluating these methods. However, it is possible to define criteria for comparing them, and to look at their respective advantages and disadvantages. These criteria can be used to select the right method(s) for a given use case.
 
 
 

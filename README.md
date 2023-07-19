@@ -14,3 +14,6 @@ This need for explicability concerns different players, each with their own moti
 
 In certain fields, such as health or law, the use of machine learning models that cannot be explained raises ethical questions and can prove dangerous. This aspect should be much more closely regulated. It could be interesting to create a text similar to the RGPD, but for explicability, which is an issue at least as sensitive as user data protection.
 
+### How to explain a machine learning model?
+
+One of the most popular explicability methods is LIME (Local Interpretable Model-agnostic Explanations). Its principle is simple: locally approximate the complex model with a simpler, and therefore interpretable, model. This method makes it possible to explain the model's decision concerning a particular observation.

@@ -78,6 +78,16 @@ The most complex models, such as deep neural networks, are models that will neve
 Here's a graph that explains the complexity of the different models and their impact on interpretability:
 ![](https://github.com/SamLB9/AI_Explainability/blob/721bbfcc6f031b5c4e287755e2932ac1902c5d07/Graphes_ComparaisonModelsEvsI.png)
 
+## Conclusion:
+The interpretability and explicability of Machine Learning models are crucial research topics today. While advances in Artificial Intelligence have opened up new perspectives in fields such as medicine, finance and many others, it is becoming essential to understand how models make their decisions. However, despite efforts to make models more interpretable and explicable, the increasing complexity of ML architectures has made this task particularly challenging.
+
+Simple, linear models, such as linear regressions and decision trees, have demonstrated their ability to be interpreted and explained with relative ease. Nevertheless, in fields such as medicine, where critical decisions have to be made, more sophisticated and powerful models, such as deep neural networks, are often required to achieve high performance. However, these complex models are often regarded as a "black box", as their inner workings are difficult to decipher.
+
+The need to interpret and explain these complex models is more urgent than ever, especially when they are used to make decisions impacting the health, privacy or fundamental rights of individuals. Progress is being made with the use of interpretive methods, such as LIME and counterfactual explanations, but fully understanding all AI models remains a major challenge.
+
+In this context, further research into the interpretability and explicability of ML models is essential. These efforts are needed to develop tools and approaches that will enable users and healthcare experts to better understand how models make decisions. While perfect understanding of all AI models may seem utopian, significant progress can be made by making models more transparent and providing clear and reliable explanations, to ensure responsible and ethical use of AI in fields as crucial as medicine and beyond.
+
+
 Bibliography:
 - https://www.aqsone.com/blog/2022/data-science-fr/interpretabilite-et-explicabilite-des-modeles-de-machine-learning/
 - https://www.kereval.com/explicabilite-de-lintelligence-artificielle/

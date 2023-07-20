@@ -2,7 +2,15 @@
 
 Artificial Intelligence (AI) makes it possible to harness huge volumes of data to perform complex tasks, usually very efficiently. However, AI models, and more specifically Machine Learning and even Deep Learning models, are often compared to "black boxes" due to their opaque operation, not necessarily understandable by humans. The complexity of these models is therefore a strength, as it enables us to respond to problems better than with simpler models, but it is also a weakness, as it makes them difficult to interpret. However, in certain critical fields such as medical diagnostics or autonomous driving, where human lives may be at stake, control and understanding of the decision-making mechanisms of these models is essential.
 
-In concrete terms, explicability is a field of machine learning that aims to justify as precisely as possible a result given by a model. Explainability is developing remarkably well. Research in this field is very active, and companies are investing more and more in these issues.
+Before going into detail, we'll define the terms explicability and interpretability of models.
+
+### Interpretability:
+The interpretability of an ML model is linked to its simplicity and overall comprehensibility. A model is interpretable when it is easy for humans to understand how it works, even if its explanations are not necessarily exhaustive. An interpretable model must be simple and have a clear structure, so that users can analyze and trust it without needing in-depth knowledge of machine learning. Interpretability is often favored when simplicity and overall understanding are more important than fine-grained explanation of predictions.
+
+### Explicability:
+The explicability of an ML model refers to its ability to provide a clear and understandable explanation of how it makes decisions. This means you can understand why the model has predicted a certain thing or taken a certain action. Explainability is essential when you want to know which features or variables are important to the model and how they influence predictions. An explanatory model enables you to understand the decision-making process, which is crucial in sensitive areas such as healthcare or finance.
+
+Research in this field is very active, and companies are investing more and more in these issues.
 
 AI explicability or interpretability aims to make the operation and results of models more intelligible and transparent to humans, without compromising on performance.
 However, the difficulty today is that the more precise the models, the less explicable they become. So we're looking for a compromise. Even if for many data scientists, precision seems to be the supreme indicator of model quality, it's important to understand that it isn't everything. In deep learning, for example, explaining models is very difficult. Finding an algorithm as efficient as deep learning that is also 100% explainable is (for the moment?) utopian.
@@ -48,6 +56,13 @@ Still on the subject of the chosen customer, a first counterfactual explanation 
 ### In conclusion, these three methods produce different explanations, but they seem to be consistent with each other, since certain variables are found in all the explanations. This is the case for contract type, which appears to be an important factor in prediction. This seems relevant, since it is generally easier to cancel a monthly contract, often without commitment. Finally, explicability methods vary in terms of the techniques used, visualization and type of explanation. One of the difficulties therefore lies in evaluating these methods. However, it is possible to define criteria for comparing them, and to look at their respective advantages and disadvantages. These criteria can be used to select the right method(s) for a given use case.
 
 ![](https://github.com/SamLB9/AI_Explainability/blob/721bbfcc6f031b5c4e287755e2932ac1902c5d07/Graphes_ComparaisonModelsEvsI.png)
+
+Bibliography:
+- https://www.aqsone.com/blog/2022/data-science-fr/interpretabilite-et-explicabilite-des-modeles-de-machine-learning/
+- https://www.kereval.com/explicabilite-de-lintelligence-artificielle/
+- https://larevueia.fr/explicabilite-des-modeles-ne-croyez-pas-aveuglement-ce-que-lia-vous-dit/
+- https://www.jmlr.org/papers/volume21/19-1035/19-1035.pdf 
+
 
 Continuer la recherche sur ce sujet:
 'Si vous êtes intéressé par ce sujet, nous vous invitons à vous documenter sur d’autres méthodes d’interprétabilité des modèles de machine learning telles que : les techniques reposant sur l’analyse de « graphiques ICE et PDP », les méthodes dites de « Permutation Feature Importance », les « explications contrefactuelles » ou encore les « ancres ».'

@@ -162,8 +162,5 @@ In this context, further research into the interpretability and explicability of
 - https://www.nexialog.com/wp-content/uploads/2022/03/Interpretabilite-du-ML-Nexialog-Consulting.pdf
 
 
-Continuer la recherche sur ce sujet:
-'Si vous êtes intéressé par ce sujet, nous vous invitons à vous documenter sur d’autres méthodes d’interprétabilité des modèles de machine learning telles que : les techniques reposant sur l’analyse de « graphiques ICE et PDP », les méthodes dites de « Permutation Feature Importance », les « explications contrefactuelles » ou encore les « ancres ».'
-
 
 

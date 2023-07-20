@@ -108,7 +108,8 @@ In this context, further research into the interpretability and explicability of
 - https://www.aqsone.com/blog/2022/data-science-fr/interpretabilite-et-explicabilite-des-modeles-de-machine-learning/
 - https://www.kereval.com/explicabilite-de-lintelligence-artificielle/
 - https://larevueia.fr/explicabilite-des-modeles-ne-croyez-pas-aveuglement-ce-que-lia-vous-dit/
-- https://www.jmlr.org/papers/volume21/19-1035/19-1035.pdf 
+- https://www.jmlr.org/papers/volume21/19-1035/19-1035.pdf
+- https://www.nexialog.com/wp-content/uploads/2022/03/Interpretabilite-du-ML-Nexialog-Consulting.pdf
 
 
 Continuer la recherche sur ce sujet:

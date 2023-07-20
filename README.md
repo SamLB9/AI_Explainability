@@ -121,7 +121,7 @@ Here's an ALE graph example:
 
 Accumulated Local Effects provides a global view of the impact of a variable on predictions, taking into account possible interactions with other variables. This provides a better understanding of the relationship between the feature under study and the model's predictions on the data set.
 
-### In conclusion, these three methods produce different explanations, but they seem to be consistent with each other, since certain variables are found in all the explanations. This is the case for contract type, which appears to be an important factor in prediction. This seems relevant, since it is generally easier to cancel a monthly contract, often without commitment. Finally, explicability methods vary in terms of the techniques used, visualization and type of explanation. One of the difficulties therefore lies in evaluating these methods. However, it is possible to define criteria for comparing them, and to look at their respective advantages and disadvantages. These criteria can be used to select the right method(s) for a given use case.
+### In conclusion, these methods produce different explanations, but they seem to be consistent with each other, since certain variables are found in all the explanations. Finally, explainability methods vary in terms of techniques used, visualization and type of explanation. One of the difficulties therefore lies in evaluating these methods. However, it is possible to define criteria for comparing them, and to examine their respective advantages and disadvantages. These criteria can be used to select the right method(s) for a given use case.
 
 ## Which models are the most interpretable and explainable?
 

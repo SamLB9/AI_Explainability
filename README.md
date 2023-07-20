@@ -55,6 +55,19 @@ Example of a counterfactual explanation:
 
 Still on the subject of the chosen customer, a first counterfactual explanation consists in the modification of his type of contract and his type of payment; with these two changes, the model predicts non-cancellation. The same applies if only the customer's seniority is modified, from 13 to 65 months.
 
+### Individual Conditional Expectation(ICE):
+Individual Conditional Expectation (ICE) is a technique used to understand how a particular variable affects the predictions of a Machine Learning model. Essentially, it involves decomposing the effect of that variable on predictions, by showing how the values of that variable individually influence the results of the model.
+
+To better understand, imagine you have a prediction model, for example one that predicts the price of a house based on its characteristics such as surface area, number of bedrooms, etc. You want to understand how the surface area of the house affects the price of the house. You want to understand how the size of the house affects price predictions.
+
+With Individual Conditional Expectation, you'll take the following steps:
+1) Fix all other variables: For each data instance (i.e. a specific house in our example), keep the other characteristics fixed, such as number of bedrooms, location, etc.
+2) Vary the area: You will now vary only the area of the house for this data instance, taking different possible area values.
+3) Observe predictions: At each area value, make predictions with the model and record the results (i.e. the predicted prices). You will obtain a series of predictions corresponding to different area values.
+4) Plot the ICE graph: Finally, plot the ICE graph, which shows on the x-axis the different area values you've tested, and on the y-axis, the corresponding predictions. The graph will show you how the predictions change as the area of the house varies.
+
+ICE allows you to visualize how each individual variable affects the model's predictions, regardless of interactions with other variables. This can provide valuable information on the relationship between features and model predictions, and enable a better understanding of the factors influencing prediction results.
+
 ### In conclusion, these three methods produce different explanations, but they seem to be consistent with each other, since certain variables are found in all the explanations. This is the case for contract type, which appears to be an important factor in prediction. This seems relevant, since it is generally easier to cancel a monthly contract, often without commitment. Finally, explicability methods vary in terms of the techniques used, visualization and type of explanation. One of the difficulties therefore lies in evaluating these methods. However, it is possible to define criteria for comparing them, and to look at their respective advantages and disadvantages. These criteria can be used to select the right method(s) for a given use case.
 
 ## Which models are the most interpretable and explainable?

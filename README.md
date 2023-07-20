@@ -71,6 +71,20 @@ Here's an ICE graph example:
 
 ICE allows you to visualize how each individual variable affects the model's predictions, regardless of interactions with other variables. This can provide valuable information on the relationship between features and model predictions, and enable a better understanding of the factors influencing prediction results.
 
+### 5) Accumulated Local Effects (ALE):
+Accumulated Local Effects (ALE) is a technique used to understand how variables in a Machine Learning model influence predictions. It provides a global, accumulated view of the effect of a specific variable on the model's predictions, as seen through ALE.
+
+Imagine you once again have a prediction model that estimates the price of a house based on different characteristics. This time, you want to understand how the size of the house affects the predictions, but in a more global way.
+
+Here's how Accumulated Local Effects works:
+1) Set all other variables: As with ICE, you keep the other characteristics fixed for each data instance.
+2) Vary the surface area: You will now vary the surface area of the house for this data instance, taking different possible surface area values, as in ICE.
+3) Calculate the local effect: At each area value, you calculate the local effect of the area on the model prediction. The local effect is simply the difference between the model prediction for a certain area value and the average model prediction for all area values.
+4) Accumulate local effects: You then accumulate these local effects to obtain a global view of the effect of area on model predictions. For each area value, you add the local effect to the accumulation of previous local effects.
+5) Draw the ALE graph: Finally, draw the ALE graph, where the x-axis represents the different area values, and the y-axis represents the accumulated effects. The graph will show you how the effect of area on predictions changes as area varies.
+
+Accumulated Local Effects provides a global view of the impact of a variable on predictions, taking into account possible interactions with other variables. This provides a better understanding of the relationship between the feature under study and the model's predictions on the data set.
+
 ### In conclusion, these three methods produce different explanations, but they seem to be consistent with each other, since certain variables are found in all the explanations. This is the case for contract type, which appears to be an important factor in prediction. This seems relevant, since it is generally easier to cancel a monthly contract, often without commitment. Finally, explicability methods vary in terms of the techniques used, visualization and type of explanation. One of the difficulties therefore lies in evaluating these methods. However, it is possible to define criteria for comparing them, and to look at their respective advantages and disadvantages. These criteria can be used to select the right method(s) for a given use case.
 
 ## Which models are the most interpretable and explainable?

@@ -88,7 +88,7 @@ The need to interpret and explain these complex models is more urgent than ever,
 In this context, further research into the interpretability and explicability of ML models is essential. These efforts are needed to develop tools and approaches that will enable users and healthcare experts to better understand how models make decisions. While perfect understanding of all AI models may seem utopian, significant progress can be made by making models more transparent and providing clear and reliable explanations, to ensure responsible and ethical use of AI in fields as crucial as medicine and beyond.
 
 
-Bibliography:
+### Bibliography:
 - https://www.aqsone.com/blog/2022/data-science-fr/interpretabilite-et-explicabilite-des-modeles-de-machine-learning/
 - https://www.kereval.com/explicabilite-de-lintelligence-artificielle/
 - https://larevueia.fr/explicabilite-des-modeles-ne-croyez-pas-aveuglement-ce-que-lia-vous-dit/

@@ -149,6 +149,16 @@ Here's an ALE graph example:
 
 Accumulated Local Effects provides a global view of the impact of a variable on predictions, taking into account possible interactions with other variables. This provides a better understanding of the relationship between the feature under study and the model's predictions on the data set.
 
+### There are several popular Python libraries for studying the explicability and interpretability of AI models. Here are some of the main libraries used for this purpose:
+1) SHAP (SHapley Additive exPlanations): SHAP is a very powerful and popular library for explaining ML model predictions. It relies on SHAP values to quantify the importance of each feature in a prediction. The library offers various tools and visualizations, including the SHAP Summary Plot, for understanding the impact of each variable on predictions.
+2) LIME (Local Interpretable Model-agnostic Explanations): LIME is a library that provides local explanations for ML models of any type. It generates simple local models around a specific prediction to explain its behavior. LIME is often used to explain black-box models, such as deep neural networks.
+3) ELI5 (Explain Like I'm 5): ELI5 is a library that offers explanations for various models, including models from scikit-learn, xgboost, and others. It provides a simple API for displaying weights, feature contributions, and activation maps.
+4) Yellowbrick: Yellowbrick is a visualization library for the analysis and interpretation of ML models. It offers a variety of visualizations, including ROC curve graphs, heat maps, and feature contribution graphs.
+5) AIX360 (AI Explainability 360): AIX360 is a library developed by IBM Research to study explainability in AI. It offers a variety of tools for understanding AI models, including techniques for explaining the predictions of computer vision and natural language processing models.
+6) InterpretML: InterpretML is a Microsoft library for interpreting and understanding ML models, providing various techniques such as ALE graphs, ICE graphs and correlation maps.
+
+These libraries offer different approaches and visualizations to help study and understand ML models. You can choose the library that best suits your needs and your specific model.
+
 ### In conclusion, these methods produce different explanations, but they seem to be consistent with each other, since certain variables are found in all the explanations. Finally, explainability methods vary in terms of techniques used, visualization and type of explanation. One of the difficulties therefore lies in evaluating these methods. However, it is possible to define criteria for comparing them, and to examine their respective advantages and disadvantages. These criteria can be used to select the right method(s) for a given use case.
 
 ## Which models are the most interpretable and explainable?

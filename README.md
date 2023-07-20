@@ -55,7 +55,23 @@ Example of a counterfactual explanation:
 
 Still on the subject of the chosen customer, a first counterfactual explanation consists in the modification of his type of contract and his type of payment; with these two changes, the model predicts non-cancellation. The same applies if only the customer's seniority is modified, from 13 to 65 months.
 
-### 4) Individual Conditional Expectation(ICE):
+### 4) Partial Dependence Plot (PDP) 
+Partial Dependence Plot (PDP) is a method used to understand how a specific variable influences the predictions of a Machine Learning model. It allows us to observe the overall effect of this variable on predictions, taking into account interactions with other variables.
+
+Let's imagine we have a prediction model for house prices, and we want to know how the size of the house affects predictions.
+
+Here's how the Partial Dependence Plot works:
+1) Fix all other variables: As in the other techniques, keep the other characteristics fixed for each data instance.
+2) Vary the area: You'll now vary the area of the house for this data instance, taking different possible area values.
+3) Average predictions: At each area value, make predictions with the model, but this time, rather than looking at individual predictions as in ICE, you record the average of predictions for all data instances when the area is set to this value.
+4) Plot the PDP graph: Finally, plot the PDP graph, where the x-axis represents the different area values, and the y-axis represents the average predictions for each area value. The graph shows how area influences model predictions on average.
+
+Here's an PDP graph example:
+![image](https://github.com/SamLB9/AI_Explainability/assets/106078401/0394c542-1f3d-4e3d-ac9e-a22f463614b5)
+
+The Partial Dependence Plot provides a global, average view of the effect of a variable on model predictions, taking into account interactions with other variables. This provides a better understanding of the relationship between the variable under study and the model's predictions on the whole data set. PDP is useful for identifying general model trends and relationships between features without focusing on individual predictions.
+
+### 5) Individual Conditional Expectation(ICE):
 Individual Conditional Expectation (ICE) is a technique used to understand how a particular variable affects the predictions of a Machine Learning model. Essentially, it involves decomposing the effect of that variable on predictions, by showing how the values of that variable individually influence the results of the model.
 
 To better understand, imagine you have a prediction model, for example one that predicts the price of a house based on its characteristics such as surface area, number of bedrooms, etc. You want to understand how the surface area of the house affects the price of the house. You want to understand how the size of the house affects price predictions.
@@ -71,7 +87,7 @@ Here's an ICE graph example:
 
 ICE allows you to visualize how each individual variable affects the model's predictions, regardless of interactions with other variables. This can provide valuable information on the relationship between features and model predictions, and enable a better understanding of the factors influencing prediction results.
 
-### 5) Accumulated Local Effects (ALE):
+### 6) Accumulated Local Effects (ALE):
 Accumulated Local Effects (ALE) is a technique used to understand how variables in a Machine Learning model influence predictions. It provides a global, accumulated view of the effect of a specific variable on the model's predictions, as seen through ALE.
 
 Imagine you once again have a prediction model that estimates the price of a house based on different characteristics. This time, you want to understand how the size of the house affects the predictions, but in a more global way.

@@ -83,6 +83,9 @@ Here's how Accumulated Local Effects works:
 4) Accumulate local effects: You then accumulate these local effects to obtain a global view of the effect of area on model predictions. For each area value, you add the local effect to the accumulation of previous local effects.
 5) Draw the ALE graph: Finally, draw the ALE graph, where the x-axis represents the different area values, and the y-axis represents the accumulated effects. The graph will show you how the effect of area on predictions changes as area varies.
 
+Here's an ALE graph example:
+![image](https://github.com/SamLB9/AI_Explainability/assets/106078401/bcf135b6-bf81-4afc-a616-a9744e5b6880)
+
 Accumulated Local Effects provides a global view of the impact of a variable on predictions, taking into account possible interactions with other variables. This provides a better understanding of the relationship between the feature under study and the model's predictions on the data set.
 
 ### In conclusion, these three methods produce different explanations, but they seem to be consistent with each other, since certain variables are found in all the explanations. This is the case for contract type, which appears to be an important factor in prediction. This seems relevant, since it is generally easier to cancel a monthly contract, often without commitment. Finally, explicability methods vary in terms of the techniques used, visualization and type of explanation. One of the difficulties therefore lies in evaluating these methods. However, it is possible to define criteria for comparing them, and to look at their respective advantages and disadvantages. These criteria can be used to select the right method(s) for a given use case.

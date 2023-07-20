@@ -55,7 +55,7 @@ Example of a counterfactual explanation:
 
 Still on the subject of the chosen customer, a first counterfactual explanation consists in the modification of his type of contract and his type of payment; with these two changes, the model predicts non-cancellation. The same applies if only the customer's seniority is modified, from 13 to 65 months.
 
-### Individual Conditional Expectation(ICE):
+### 4) Individual Conditional Expectation(ICE):
 Individual Conditional Expectation (ICE) is a technique used to understand how a particular variable affects the predictions of a Machine Learning model. Essentially, it involves decomposing the effect of that variable on predictions, by showing how the values of that variable individually influence the results of the model.
 
 To better understand, imagine you have a prediction model, for example one that predicts the price of a house based on its characteristics such as surface area, number of bedrooms, etc. You want to understand how the surface area of the house affects the price of the house. You want to understand how the size of the house affects price predictions.

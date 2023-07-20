@@ -57,6 +57,23 @@ Still on the subject of the chosen customer, a first counterfactual explanation 
 
 ### In conclusion, these three methods produce different explanations, but they seem to be consistent with each other, since certain variables are found in all the explanations. This is the case for contract type, which appears to be an important factor in prediction. This seems relevant, since it is generally easier to cancel a monthly contract, often without commitment. Finally, explicability methods vary in terms of the techniques used, visualization and type of explanation. One of the difficulties therefore lies in evaluating these methods. However, it is possible to define criteria for comparing them, and to look at their respective advantages and disadvantages. These criteria can be used to select the right method(s) for a given use case.
 
+## Which models are the most interpretable and explainable?
+
+The most interpretable and explainable Machine Learning models are generally simple, linear models. Here are a few examples of models that are renowned for their interpretability and explicability:
+- Linear regression: This is one of the simplest and most comprehensible models in ML. It models the linear relationship between input and output variables. Feature coefficients provide a direct indication of their importance in the model.
+- Logistic regression: This model is used for binary classification. It is also relatively simple to interpret, as the coefficients can be associated with the contribution of each feature to the classification.
+- Decision trees: Decision trees are easy to understand because they represent decisions in tree form. Each node in the tree represents a feature, and each branch corresponds to a binary decision based on that feature.
+- Gradient Boosting Machines: Although more complex than simple decision trees, gradient boosting models retain a certain interpretability, especially when their depth is limited.
+- Shallow neural networks: Shallow neural networks with a few hidden layers can be easier to interpret than deep networks. The low complexity makes it easier to understand how inputs are transformed into outputs.
+
+In contrast, Machine Learning models that are generally less interpretable and explainable include:
+- Deep neural networks: Deep neural networks, especially with many hidden layers, can be very complex, making it difficult to interpret their decisions. Internal mechanisms are often difficult to grasp.
+- Support vector machines (SVMs) with complex kernels: SVMs can be interpretable with linear kernels, but when complex kernels are used, the relationship between features and predictions may be less clear.
+- Recurrent neural networks (RNN) and Transformer-based natural language processing models: These models are designed for complex tasks such as text translation or text generation, and their sophisticated architectures make them difficult to interpret.
+
+It's important to note that certain techniques, such as perturbation analysis, activation maps and other visualization methods, can help make certain aspects of the models more interpretable, even for more complex models. However, this will always depend on the level of complexity of the model and the specific task for which it is being used.
+
+
 ![](https://github.com/SamLB9/AI_Explainability/blob/721bbfcc6f031b5c4e287755e2932ac1902c5d07/Graphes_ComparaisonModelsEvsI.png)
 
 Bibliography:

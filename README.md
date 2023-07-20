@@ -73,7 +73,9 @@ In contrast, Machine Learning models that are generally less interpretable and e
 
 It's important to note that certain techniques, such as perturbation analysis, activation maps and other visualization methods, can help make certain aspects of the models more interpretable, even for more complex models. However, this will always depend on the level of complexity of the model and the specific task for which it is being used.
 
+The most complex models, such as deep neural networks, are models that will never be interpretable, but may be explainable in the future, because today it's utopian to fully understand this kind of model.
 
+Here's a graph that explains the complexity of the different models and their impact on interpretability:
 ![](https://github.com/SamLB9/AI_Explainability/blob/721bbfcc6f031b5c4e287755e2932ac1902c5d07/Graphes_ComparaisonModelsEvsI.png)
 
 Bibliography:

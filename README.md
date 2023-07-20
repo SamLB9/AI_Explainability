@@ -110,13 +110,25 @@ Anchors are considered "model-agnostic", meaning they can be applied to differen
 
 ### 6) Counterfactual explanations:
 
-In contrast to the previous method, which focuses on the variables that anchor predictions, the counterfactual explanation method looks for those whose change modifies the prediction. Several approaches exist to find the smallest possible change that modifies the prediction, including the naive trial-and-error approach or the use of an optimization algorithm. The advantage of this method is that it generates several explanations for a single decision.
+In contrast to the previous method, which focuses on the variables that anchor predictions, the counterfactual explanation method looks for those whose change modifies the prediction. Counterfactual explanations" are an approach to the interpretability of Machine Learning models that aims to explain the model's predictions by proposing hypothetical scenarios in which a prediction would have been different.
+
+The fundamental idea behind counterfactual explanations is to provide an answer to the question, "What would have had to be different in the input data for the model to produce a different prediction?"
+
+Here's how it works:
+1) Existing data point: You have a specific data point for which you want to explain the model's prediction. For example, this could be an image, a text description, or feature values for a prediction model.
+2) Current prediction: The model has already made a prediction for this data point, and you know the model's current output for this input.
+3) Counterfactual scenario: The counterfactual explanation will now seek to find a hypothetical scenario where a feature or set of features is changed in such a way as to produce a different prediction. This means that you will change certain values in the input data, while keeping the rest of the data constant, until the model predicts a different output.
+4) Presentation of the explanation: Once the counterfactual scenario has been found, the explanation can be presented by showing how specific characteristics have been modified, leading to a different prediction from the model.
 
 Example of a counterfactual explanation:
 
 ![image](https://github.com/SamLB9/AI_Explainability/assets/106078401/9f34fe28-4f5a-49e3-b150-e9b75c86ae1a)
 
 Still on the subject of the chosen customer, a first counterfactual explanation consists in the modification of his type of contract and his type of payment; with these two changes, the model predicts non-cancellation. The same applies if only the customer's seniority is modified, from 13 to 65 months.
+
+Counterfactual explanations are useful for understanding how individual characteristics influence model predictions, and what conditions would be necessary to obtain an alternative prediction. They highlight the factors that have the greatest impact on the model's results, and help identify the key points that differentiate the model's predictions for different data instances.
+
+Counterfactual explanations are particularly useful in critical areas where decisions based on model predictions have important consequences, such as healthcare or financial lending systems, as they enable users to better understand the underlying reasons behind model predictions.
 
 ### 7) Partial Dependence Plot (PDP) 
 Partial Dependence Plot (PDP) is a method used to understand how a specific variable influences the predictions of a Machine Learning model. It allows us to observe the overall effect of this variable on predictions, taking into account interactions with other variables.
